@@ -661,6 +661,9 @@ public final class MonthDay
      * This month-day instance is immutable and unaffected by this method call.
      * The month will wrap at the end of the year from January to December.
      * <p>
+     * If the number of days subtracted requires wrapping past the end of 
+     * February, the wrapping will be calculated assuming February has 29 days. 
+     * <p>
      * The following three lines are identical in effect:
      * <pre>
      * MonthDay subtracted = md.minusDays(6);
